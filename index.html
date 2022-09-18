@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>World Tour 2022-2023</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="images/plane.ico">
+    <link rel="manifest" href="./manifest.json" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script type="text/javascript">
+      if ("serviceWorker" in navigator) {
+        navigator.serviceWorker.register("sw.js");
+      }
+    </script>
+  </head>
+  <body>
+    <div class="bg fadeIn">
+      <div class="clock"></div>
+      <div class="dropdown" style="float: right">
+        <button class="dropbtn">Nuestros destinos</button>
+        <div class="dropdown-content">
+          <a
+            href="https://www.google.com/maps/place/40%C2%B046'12.6%22N+74%C2%B001'09.0%22W/@40.7701759,-74.0191727,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xfd20c2c576b98f6!8m2!3d40.7701759!4d-74.0191727"
+            >New York</a
+          >
+          <a
+            href="https://www.google.com/maps/place/52%C2%B031'04.2%22N+13%C2%B026'49.5%22E/@52.5178354,13.4142636,13z/data=!4m5!3m4!1s0x0:0xd623ba6a952b38!8m2!3d52.5178337!4d13.447094"
+            >Berlin</a
+          >
+          <a
+            href="https://www.google.com/maps/place/50%C2%B050'40.3%22N+4%C2%B021'13.1%22E/@50.8445168,4.3536501,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xa426496ed13c7ae8!8m2!3d50.8445168!4d4.3536501"
+            >Bruselas</a
+          >
+          <a
+            href="https://www.google.com/maps/place/C.+Julio+Antonio,+6,+46007+Valencia,+Espa%C3%B1a/@39.4658854,-0.3808313,17z/data=!3m1!4b1!4m5!3m4!1s0xd604f49c28d566d:0x98d2de35acdd01fc!8m2!3d39.4658854!4d-0.3808313?hl=es-419"
+            >Valencia</a
+          >
+          <a
+            href="https://www.google.com/maps/place/37%C2%B034'32.6%22N+126%C2%B059'08.0%22E/@37.5757217,126.9855652,17z/data=!3m1!4b1!4m5!3m4!1s0x0:0xdf3de23dbbd2d9b6!8m2!3d37.5757217!4d126.9855652"
+            >Seoul</a
+          >
+        </div>
+      </div>
+      <div class="centered">
+        <h1></h1>
+        <h2></h2>
+      </div>
+      <footer>
+        <p>
+          <a
+            href="https://www.instagram.com/andreayuliana/"
+            class="fa fa-instagram"
+          ></a>
+        </p>
+      </footer>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
+  </body>
+</html>

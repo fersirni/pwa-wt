@@ -1,0 +1,191 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+footer {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+.fa {
+  padding: 10px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 0%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  color: white;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.dropbtn {
+  background-color: black;
+  color: white;
+  padding: 1em;
+  font-size: 1em;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  top: 5%;
+  right: 5%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  right: 0;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: #747474;
+}
+.bg {
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: background 200ms ease-in-out 300ms;
+}
+.centered {
+  backdrop-filter: blur(2px);
+  background: #a1a1a163;
+  position: relative;
+  top: 20%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  font-size: 10em;
+  color: white;
+}
+h2 {
+  color: white;
+  position: relative;
+  font-size: 5em;
+  text-align: center;
+}
+
+.clock {
+  font-weight: bold;
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1.5em;
+  color: white;
+}
+@media only screen and (max-width: 500px) {
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 5em;
+    color: white;
+  }
+  h2 {
+    color: white;
+    position: relative;
+    font-size: 2.5em;
+    text-align: center;
+  }
+  .clock {
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    font-size: 1em;
+    color: white;
+    max-width: 40%;
+  }
+  .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 0.7em;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+  }
+  footer {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
+@media only screen and (max-width: 280px) {
+  h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3em;
+    color: white;
+  }
+  h2 {
+    color: white;
+    position: relative;
+    font-size: 2em;
+    text-align: center;
+  }
+  .clock {
+    font-weight: bold;
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    color: white;
+    max-width: 40%;
+  }
+  .dropbtn {
+    background-color: black;
+    color: white;
+    padding: 0.7em;
+    font-size: 0.7em;
+    border: none;
+    cursor: pointer;
+  }
+  footer {
+    position: absolute;
+    bottom: 5%;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+  }
+}
