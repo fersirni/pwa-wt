@@ -84,7 +84,7 @@ footer {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  transition: background 200ms ease-in-out 300ms;
+  transition: background 300ms ease-in-out 400ms;
 }
 .centered {
   backdrop-filter: blur(2px);

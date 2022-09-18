@@ -114,7 +114,7 @@ function showSlides() {
   if (slideIndex >= images.length) {
     slideIndex = 0;
   }
-  setTimeout(showSlides, 5000);
+  setTimeout(showSlides, 10000);
 }
 
 var countDownDate = new Date("Oct 14, 2022 00:00:00").getTime();
