@@ -3,21 +3,22 @@ html {
   height: 100%;
   margin: 0;
 }
+
 footer {
   position: absolute;
-  bottom: 0%;
+  bottom: 5%;
   right: 5%;
   color: white;
   font-size: 1.5em;
   font-weight: bold;
 }
+
 .fa {
-  padding: 10px;
-  font-size: 30px;
-  width: 30px;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 1em;
   text-align: center;
   text-decoration: none;
-  margin: 5px 2px;
   border-radius: 50%;
   background: radial-gradient(
     circle at 30% 107%,
@@ -104,6 +105,7 @@ h2 {
   position: relative;
   font-size: 5em;
   text-align: center;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .clock {
@@ -112,6 +114,7 @@ h2 {
   top: 5%;
   left: 5%;
   font-size: 1.5em;
+  font-family: 'Courier New', Courier, monospace;
   color: white;
 }
 @media only screen and (max-width: 500px) {

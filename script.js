@@ -39,7 +39,7 @@ const valencia = {
     "./images/valencia-2.webp",
     "./images/valencia-3.jpg",
   ],
-  timeZone: "Europe/Barcelona",
+  timeZone: "Europe/Madrid",
 };
 
 const seul = {
@@ -73,6 +73,7 @@ const argentina = {
     "./images/valencia-2.webp",
     "./images/seoul-2.webp",
   ],
+  timeZone: "America/Argentina/Buenos_Aires",
 };
 let slideIndex = 0;
 showSlides();
@@ -104,22 +105,24 @@ function getData() {
 }
 
 function showSlides() {
-  let { city, images, timeZone } = getData();
+  let { city, images } = getData();
   let body = document.getElementsByClassName("bg")[0];
   let h1 = document.getElementsByTagName("h1")[0];
-  let time = document.getElementsByClassName("clock")[0];
   h1.innerHTML = `${city}`;
   body.style.backgroundImage = `url(${images[slideIndex]})`;
   slideIndex++;
   if (slideIndex >= images.length) {
     slideIndex = 0;
   }
-  time.innerHTML = new Date().toLocaleString("es", { timeZone }).toString();
   setTimeout(showSlides, 5000);
 }
 
 var countDownDate = new Date("Oct 14, 2022 00:00:00").getTime();
 var x = setInterval(function () {
+  let { dates, timeZone } = getData();
+  let time = document.getElementsByClassName("clock")[0];
+  time.innerHTML = new Date().toLocaleString("es", { timeZone });
+
   let h2 = document.getElementsByTagName("h2")[0];
   var now = new Date().getTime();
   var distance = countDownDate - now;
@@ -133,7 +136,6 @@ var x = setInterval(function () {
 
   if (distance < 0) {
     clearInterval(x);
-    let { dates } = getData();
     h2.innerHTML = `${dates}`;
   }
 }, 1000);
