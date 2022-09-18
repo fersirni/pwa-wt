@@ -1,8 +1,8 @@
 {
     "name": "Word Tour 2022-2023",
     "short_name": "WorldTour",
-    "theme_color": "#2196f3",
-    "background_color": "#2196f3",
+    "theme_color": "black",
+    "background_color": "black",
     "display": "fullscreen",
     "orientation": "portrait",
     "scope": "./",
@@ -19,7 +19,7 @@
             "sizes": "128x128"
         },
         {
-            "src": "./images/plane.png",
+            "src": "./images/plane-16.png",
             "type": "image/png",
             "sizes": "16x16"
         }
