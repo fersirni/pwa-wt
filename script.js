@@ -80,24 +80,17 @@ showSlides();
 
 function getData() {
   var now = new Date();
-  if (now.getMonth() == 10 && now.getDate() > 14 && now.getDate() <= 29) {
+  const month = now.getMonth() + 1;
+  const day = now.getDate();
+  if (month == 10 && day > 14 && day <= 29) {
     return newYork;
-  } else if (
-    (now.getMonth() == 10 && now.getDate() > 29) ||
-    (now.getMonth() == 11 && now.getDate() < 28)
-  ) {
+  } else if ((month == 10 && day > 29) || (month == 11 && day < 28)) {
     return berlin;
-  } else if (
-    (now.getMonth() == 11 && now.getDate() > 27) ||
-    (now.getMonth() == 12 && now.getDate() < 23)
-  ) {
+  } else if ((month == 11 && day > 27) || (month == 12 && day < 23)) {
     return bruselas;
-  } else if (
-    (now.getMonth() == 12 && now.getDate() > 22) ||
-    (now.getMonth() == 1 && now.getDate() < 2)
-  ) {
+  } else if ((month == 12 && day > 22) || (month == 1 && day < 2)) {
     return valencia;
-  } else if (now.getMonth() == 1) {
+  } else if (month == 1) {
     return seul;
   } else {
     return argentina;
