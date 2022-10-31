@@ -1,1 +1,1 @@
-Follow our trip!
+Follow our trip around the world!
